@@ -1,11 +1,15 @@
 body{
-    background: gray;
+    background: rgb(216, 216, 216);
 }
 header{
-    background: honeydew;
+    background: rgb(254, 255, 240);
 }
-ul{
+ul.menu{
     display: inline;
+}
+ul.submenu{
+    display: inline;
+    height: 0px;
 }
 li{
     display: inline;
