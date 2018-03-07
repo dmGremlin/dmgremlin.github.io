@@ -9,7 +9,11 @@ ul.menu{
 }
 ul.submenu{
     display: inline;
-    height: 0px;
+    visibility: hidden;
+}
+ul.menu:hover + .ul.submenu{
+    visibility: visible;
+    opacity: 1;
 }
 li{
     display: inline;
