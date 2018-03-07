@@ -1,3 +1,3 @@
 # dmgremlin.github.io
-Hello, wirld!
+Hello, world!
 <p style=color:"black">How are you?</p>
