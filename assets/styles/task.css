@@ -1,3 +1,9 @@
+body{
+    background: gray;
+}
+header{
+    background: honeydew;
+}
 ul{
     display: inline;
 }
