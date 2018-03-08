@@ -1,20 +1,62 @@
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background: rgb(216, 216, 216);
+    background: rgb(223, 228, 219);
+    margin: -16px;     
 }
 header{
-    background: rgb(254, 255, 240);
+    background: rgb(252, 253, 238);
+    height: 60px;
 }
-ul.menu{
-    display: inline;
-}
-ul.submenu{
-    display: inline;
-    visibility: hidden;
-}
-ul.menu:hover + .ul.submenu{
-    visibility: visible;
-    opacity: 1;
+ul{
+    list-style: none;
+    display: block;
 }
 li{
-    display: inline;
+    padding: 20px;
+    font-size: 17px;
+}
+ul::after{
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.menu > li{
+    float: left;
+    position: relative;
+    transition: top 1s ease-out 0.5s;
+}
+
+ul.submenu{
+    position: absolute;
+    top: 60px;
+    left:0px;
+    height: 0;
+    transition: all 1s;
+    opacity:0; 
+    display: inline-flex;
+    border:2px;
+    border-top-style: solid;
+    border-top-color: rgb(223, 228, 219);
+    padding: 0;
+    color: black;
+}
+li:hover{
+    color: rgb(255, 145, 145)
+}
+.menu li:hover{
+    background: rgb(244, 245, 231);
+    cursor: default;
+    
+}
+ul.menu > li:hover > ul {
+    background: rgb(252, 253, 238);
+    height: 60px;
+    visibility: visible;
+    opacity:1;
+
+    /* border-style: solid; */
+
 }
