@@ -1,22 +1,60 @@
-html{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400');
+
 body{
-    background: rgb(223, 228, 219);
-    margin: -16px;     
+    background: rgb(233,233,233);
+    margin: 0;  
+    font-family: 'Alegreya Sans', sans-serif;   
 }
 header{
     background: rgb(252, 253, 238);
     height: 60px;
 }
+p{
+    margin: 18px 0;
+    padding: 60px;
+    font-size: 20px;
+    padding: 0 60px;
+    line-height: 20px;
+}
+a{
+    text-decoration-line: none;
+    margin: 18px 0;
+    padding: 60px;
+}
+
+a:hover{
+    color: #e28585
+}
+
+a.topchik{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+img.topchik{
+    height: 30px;
+    display: inline;
+}
+
 ul{
     list-style: none;
     display: block;
+    margin: 0;
+    padding: 0 20px;
+    min-width: 850px;
 }
 li{
     padding: 20px;
     font-size: 17px;
+    display: inline;
+    /* width: 180px; */
+}
+li.image{
+    margin: 10px;
+    padding: 0;
+}
+li.submenu{
+    width: 140px;
 }
 ul::after{
     float: none;
@@ -43,20 +81,159 @@ ul.submenu{
     padding: 0;
     color: black;
 }
+
+ul.submenu2{
+    position: absolute;
+    top: 60px;
+    left:-220px;
+    height: 0;
+    transition: all 1s;
+    opacity:0; 
+    display: inline-flex;
+    border:2px;
+    border-top-style: solid;
+    border-top-color: rgb(223, 228, 219);
+    padding: 0;
+    color: black;
+}
 li:hover{
     color: rgb(255, 145, 145)
 }
 .menu li:hover{
     background: rgb(244, 245, 231);
     cursor: default;
-    
 }
+
 ul.menu > li:hover > ul {
     background: rgb(252, 253, 238);
     height: 60px;
     visibility: visible;
     opacity:1;
-
-    /* border-style: solid; */
-
 }
+div.index {
+    height: 100%;
+    margin: auto;
+    text-align: left;
+}
+  
+video.index {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    min-width: 800px;
+}
+h1{
+    font-size: 84px;
+    line-height: 75px;
+    padding: 10px 60px;
+    margin-bottom: -15px;
+    margin: 18px 0;
+}
+p.index{
+    line-height: 30px;
+}
+.math{
+    background: #ddd;
+}
+section.math{
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    top:700px;
+}
+div.math{
+    position: relative;
+    top:0;
+    display: inline-flex;
+}
+img.math{
+    width: 100%;
+}
+figure{
+    width: 360px;
+    min-width: 345px;
+    margin: 3%;
+    text-align: center;
+}
+figcaption{
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    margin: 0 15%;
+}
+h2{
+    text-align: left;
+    font-size: 48px;
+    line-height: 45px;
+    padding: 10px 60px;
+    margin-top: 120px;
+    margin-bottom: -15px;
+}
+h2.math{
+    text-align: center;
+}
+.moscow{
+    background: rgb(233,233,233);
+}
+section.moscow{
+    width: 100%;
+    min-width: 1000px;
+    position: relative;
+    top:890px;
+    height: 500px;
+}
+video.moscow {
+    position: relative;
+    width: 50%;
+    top: 0px;
+}
+div.moscow{
+    display: inline-flex;
+    height: 100%;
+    margin: 0;
+    text-align: left;
+}
+div.whitebox{
+    width: 100%;
+    height: 100%;
+    background: #fefefe;
+    min-width: 500px;
+}
+
+section.pay{
+    width: 100%;
+    min-width: 1000px;
+    position: relative;
+    top:800px;
+    height: 400px;
+}
+
+h2.pay{
+    margin-top: 100px;
+    padding-top: 200px;
+}
+
+p.pay{
+    vertical-align: middle;
+}
+div.pay {
+    height: 100%;
+    margin: auto;
+    text-align: left;
+}
+div.midle{
+    vertical-align: middle;
+}
+video.pay {
+    width: 600px;
+    position: absolute;
+    top: -40px;
+    right: 80px;
+    margin: auto;
+    z-index: -2;
+    min-width: 500px;
+}
+
